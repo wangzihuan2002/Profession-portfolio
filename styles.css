@@ -174,6 +174,47 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.hero-project {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 54px rgba(31, 42, 68, 0.17);
+}
+
+.hero-project img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.hero-project-caption {
+  display: grid;
+  gap: 3px;
+  padding: 18px 20px 20px;
+}
+
+.hero-project-caption span {
+  color: var(--teal-dark);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero-project-caption strong {
+  font-size: 1.08rem;
+}
+
 .visual-toolbar {
   display: flex;
   gap: 8px;
@@ -302,6 +343,67 @@ h3 {
 .artifact-list {
   display: grid;
   gap: 22px;
+}
+
+.featured-artifact {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+  gap: 36px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.artifact-image {
+  align-self: start;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--mist);
+}
+
+.artifact-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.artifact-image:hover img {
+  transform: scale(1.015);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.project-tags span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #eefaf8;
+  color: var(--teal-dark);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.artifact-summary {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.artifact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
 }
 
 .artifact-card {
@@ -477,6 +579,7 @@ dd {
   .hero,
   .intro-layout,
   .artifact-card,
+  .featured-artifact,
   .contact-section {
     grid-template-columns: 1fr;
   }
