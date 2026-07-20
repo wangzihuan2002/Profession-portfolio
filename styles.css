@@ -383,6 +383,39 @@ h3 {
   margin-bottom: 18px;
 }
 
+.project-number {
+  margin: 0 0 8px;
+  color: var(--teal-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-two {
+  margin-top: 4px;
+}
+
+.report-preview-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 430px;
+  padding: 24px;
+  background:
+    linear-gradient(145deg, rgba(43, 99, 217, 0.08), rgba(15, 159, 145, 0.1)),
+    var(--mist);
+}
+
+.report-preview-card img {
+  width: auto;
+  max-width: 100%;
+  height: 380px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  box-shadow: 0 14px 30px rgba(31, 42, 68, 0.16);
+}
+
 .project-tags span {
   padding: 6px 9px;
   border-radius: 6px;
