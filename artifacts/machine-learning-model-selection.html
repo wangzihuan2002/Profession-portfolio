@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A professional case study comparing traditional machine learning for housing prediction with deep learning for autonomous-driving perception.">
+    <title>Machine Learning Model Selection | Zihuan Wang</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="artifact-page.css">
+  </head>
+  <body>
+    <main class="artifact-page">
+      <a class="back-link" href="../index.html#artifacts">← Back to portfolio</a>
+
+      <header class="artifact-hero case-hero model-selection-hero">
+        <div>
+          <p class="eyebrow">Project 02 · Machine Learning Decision Case</p>
+          <h1>Choosing the Right Machine Learning Approach</h1>
+          <p>
+            A practical comparison of structured house-price prediction and autonomous-driving
+            perception—showing why model complexity must follow the problem, not lead it.
+          </p>
+          <div class="case-meta" aria-label="Project details">
+            <span>Role: Analysis &amp; Communication</span>
+            <span>Format: Written decision brief</span>
+            <span>Focus: Traditional ML vs. Deep Learning</span>
+          </div>
+        </div>
+        <div class="model-choice-visual" aria-label="Model selection summary">
+          <div class="choice-block traditional-choice">
+            <span>Structured data</span>
+            <strong>Traditional ML</strong>
+            <small>House-price prediction</small>
+          </div>
+          <div class="choice-divider">Choose by fit</div>
+          <div class="choice-block deep-choice">
+            <span>Complex sensor data</span>
+            <strong>Deep Learning</strong>
+            <small>Autonomous perception</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="artifact-body">
+        <div class="lead-grid">
+          <div>
+            <p class="eyebrow">Professional Relevance</p>
+            <h2>What this project demonstrates</h2>
+            <p>
+              This work demonstrates my ability to translate a business need into a machine
+              learning task, select an appropriate level of model complexity, and explain the
+              decision to technical and nontechnical stakeholders. It also shows that I consider
+              implementation cost, interpretability, operational risk, and consequences of error—not
+              accuracy in isolation.
+            </p>
+          </div>
+          <aside class="case-callout">
+            <strong>Capabilities showcased</strong>
+            <ul>
+              <li>Problem framing</li>
+              <li>Model selection</li>
+              <li>Tradeoff analysis</li>
+              <li>Risk-aware communication</li>
+              <li>Client-centered recommendations</li>
+            </ul>
+          </aside>
+        </div>
+
+        <section class="case-section">
+          <p class="eyebrow">Decision Principle</p>
+          <h2>The most advanced model is not always the best model</h2>
+          <p>
+            A strong machine learning recommendation begins with the data and the decision
+            environment. Structured tables, raw images, real-time constraints, explanation
+            requirements, and the cost of failure create very different technical needs. The
+            appropriate approach is the simplest one that can learn the required signal, satisfy
+            the business objective, and operate within an acceptable risk boundary.
+          </p>
+        </section>
+
+        <section class="case-section model-case-grid" aria-label="Machine learning case comparison">
+          <article class="model-case-card">
+            <p class="eyebrow">Case 01 · Traditional ML</p>
+            <h2>California House-Price Prediction</h2>
+            <p>
+              A real-estate team needs repeatable value estimates from location, square footage,
+              room counts, property age, and neighborhood conditions.
+            </p>
+            <div class="fit-label">Why it fits</div>
+            <ul>
+              <li>The inputs are structured, tabular features.</li>
+              <li>Regression and tree-based models provide strong, efficient baselines.</li>
+              <li>Predictions can be evaluated and explained to clients more directly.</li>
+            </ul>
+            <div class="not-fit-label">Why deep learning is not first choice</div>
+            <p>
+              Neural networks add data, compute, tuning, and explainability costs without a clear
+              baseline advantage. They become more relevant only if the scope expands to images,
+              floor plans, satellite data, or large volumes of listing text.
+            </p>
+          </article>
+
+          <article class="model-case-card deep-card">
+            <p class="eyebrow">Case 02 · Deep Learning</p>
+            <h2>Autonomous Taxi Perception</h2>
+            <p>
+              An autonomous vehicle must interpret pedestrians, vehicles, signals, lanes, and
+              obstacles from continuous camera, lidar, radar, and other sensor streams.
+            </p>
+            <div class="fit-label">Why it fits</div>
+            <ul>
+              <li>Neural networks learn visual, spatial, and temporal representations.</li>
+              <li>The approach can support detection, segmentation, prediction, and sensor fusion.</li>
+              <li>Large-scale data can cover patterns that handcrafted rules cannot enumerate.</li>
+            </ul>
+            <div class="not-fit-label">Why traditional ML alone is insufficient</div>
+            <p>
+              Conventional models can support narrow tasks such as travel-time forecasting, but
+              they cannot independently interpret raw, high-dimensional road scenes at the level
+              required for a complete perception system.
+            </p>
+          </article>
+        </section>
+
+        <section class="case-section comparison-section decision-matrix-section">
+          <div>
+            <p class="eyebrow">Client Decision Lens</p>
+            <h2>Five questions before choosing a model</h2>
+            <ol class="priority-list">
+              <li><strong>Data:</strong> Is it structured, unstructured, multimodal, or sequential?</li>
+              <li><strong>Outcome:</strong> What decision will the prediction support?</li>
+              <li><strong>Explainability:</strong> Who must understand or challenge the result?</li>
+              <li><strong>Operations:</strong> What latency, compute, and maintenance can the organization support?</li>
+              <li><strong>Risk:</strong> What happens when the system is wrong?</li>
+            </ol>
+          </div>
+          <div class="decision-scorecard" aria-label="Comparison scorecard">
+            <div><span>Tabular housing data</span><strong>Traditional ML</strong></div>
+            <div><span>Raw sensor perception</span><strong>Deep Learning</strong></div>
+            <div><span>Need for explanation</span><strong>Prefer simplicity</strong></div>
+            <div><span>Safety-critical deployment</span><strong>System-level controls</strong></div>
+          </div>
+        </section>
+
+        <section class="case-section process-section">
+          <p class="eyebrow">Delivery Framework</p>
+          <h2>How I would move from analysis to implementation</h2>
+          <div class="process-grid">
+            <article><span>01</span><h3>Frame</h3><p>Define the decision, users, constraints, error costs, and measurable success criteria.</p></article>
+            <article><span>02</span><h3>Baseline</h3><p>Build the simplest credible model before adding complexity.</p></article>
+            <article><span>03</span><h3>Validate</h3><p>Test generalization, subgroup performance, leakage, edge cases, and operational fit.</p></article>
+            <article><span>04</span><h3>Govern</h3><p>Plan explanation, monitoring, human oversight, incident review, and controlled releases.</p></article>
+          </div>
+        </section>
+
+        <section class="artifact-cta">
+          <div>
+            <p class="eyebrow">Full Artifact</p>
+            <h2>Read the complete report</h2>
+            <p>Download the original assignment or explore the expanded project repository.</p>
+          </div>
+          <div class="artifact-actions">
+            <a class="button primary" href="files/machine-learning-model-selection-report.pdf">Open PDF</a>
+            <a class="button secondary" href="files/machine-learning-model-selection-report.docx">Download DOCX</a>
+            <a class="button secondary" href="https://github.com/wangzihuan2002/machine-learning-model-selection-case-study">View Repository</a>
+          </div>
+        </section>
+
+        <section class="case-section sources">
+          <p class="eyebrow">Selected Sources</p>
+          <h2>Research foundation</h2>
+          <ul>
+            <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html">scikit-learn — California Housing dataset</a></li>
+            <li><a href="https://waymo.com/faq/">Waymo — Frequently Asked Questions</a></li>
+            <li><a href="https://waymo.com/about/">Waymo — Autonomous Driving Technology</a></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

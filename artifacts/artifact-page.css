@@ -228,6 +228,120 @@
   font-weight: 700;
 }
 
+.model-selection-hero {
+  background:
+    linear-gradient(145deg, rgba(43, 99, 217, 0.08), rgba(15, 159, 145, 0.1)),
+    var(--mist);
+}
+
+.model-choice-visual {
+  display: grid;
+  gap: 10px;
+}
+
+.choice-block {
+  display: grid;
+  gap: 4px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 26px rgba(31, 42, 68, 0.08);
+}
+
+.choice-block span,
+.choice-block small {
+  color: var(--muted);
+}
+
+.choice-block strong {
+  color: var(--blue);
+  font-size: 1.45rem;
+}
+
+.deep-choice strong {
+  color: var(--teal-dark);
+}
+
+.choice-divider {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.model-case-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.model-case-card {
+  padding: 30px;
+  border: 1px solid rgba(43, 99, 217, 0.2);
+  border-radius: 8px;
+  background: #f6f9ff;
+}
+
+.model-case-card.deep-card {
+  border-color: rgba(15, 159, 145, 0.25);
+  background: #f1fbf9;
+}
+
+.model-case-card ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.model-case-card li {
+  margin-top: 8px;
+}
+
+.fit-label,
+.not-fit-label {
+  margin-top: 24px;
+  color: var(--teal-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.not-fit-label {
+  color: #8b2d43;
+}
+
+.decision-matrix-section {
+  align-items: stretch;
+}
+
+.decision-scorecard {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.decision-scorecard div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.decision-scorecard span {
+  color: var(--muted);
+}
+
+.decision-scorecard strong {
+  color: var(--teal-dark);
+  text-align: right;
+}
+
 @media (max-width: 640px) {
   .artifact-page {
     padding-left: 18px;
@@ -243,7 +357,8 @@
   .case-hero,
   .lead-grid,
   .timeline-entry,
-  .comparison-section {
+  .comparison-section,
+  .model-case-grid {
     grid-template-columns: 1fr;
   }
 
