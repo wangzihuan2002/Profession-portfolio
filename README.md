@@ -12,4 +12,8 @@ A professional case study that uses Amazon as the primary benchmark to translate
 
 A decision-focused comparison of traditional machine learning for structured house-price prediction and deep learning for autonomous-driving perception. The case study connects model choice to data type, explainability, delivery cost, operational risk, and consequences of error.
 
+**Project 03 — Neural Networks, Made Simple**
+
+A visual learning artifact that explains how neural networks learn through examples, feedback, and adjustment. The project demonstrates technical communication, audience-centered explanation, prompt iteration, transparent tool disclosure, and responsible use of analogy.
+
 The portfolio is published with GitHub Pages from the repository's `main` branch.
