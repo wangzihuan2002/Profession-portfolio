@@ -465,6 +465,113 @@
   color: var(--muted);
 }
 
+.bias-hero {
+  display: grid;
+  gap: 26px;
+  padding: 34px;
+  background:
+    linear-gradient(145deg, rgba(15, 159, 145, 0.1), rgba(179, 107, 0, 0.08)),
+    var(--mist);
+}
+
+.bias-hero-copy {
+  max-width: 900px;
+}
+
+.bias-hero img,
+.bias-lifecycle-section img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(31, 42, 68, 0.12);
+}
+
+.bias-commitment blockquote {
+  border-left-color: var(--teal);
+  background: #eefaf8;
+}
+
+.bias-lifecycle-section {
+  display: grid;
+  gap: 30px;
+}
+
+.bias-lifecycle-section > div {
+  max-width: 850px;
+}
+
+.bias-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.bias-entry-grid article,
+.bias-method-grid article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.bias-entry-grid span,
+.bias-method-grid span {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.bias-entry-grid h3,
+.bias-method-grid h3 {
+  margin-top: 8px;
+}
+
+.bias-entry-grid p,
+.bias-method-grid p {
+  margin-bottom: 0;
+  font-size: 0.93rem;
+}
+
+.bias-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.bias-type-grid article {
+  padding: 26px;
+  border: 1px solid rgba(15, 159, 145, 0.22);
+  border-radius: 8px;
+  background: #f2fbfa;
+}
+
+.bias-type-grid strong {
+  color: var(--teal-dark);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.bias-type-grid p:last-child {
+  margin-bottom: 0;
+}
+
+.bias-method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.bias-method-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff3d9;
+  color: var(--gold);
+}
+
 @media (max-width: 640px) {
   .artifact-page {
     padding-left: 18px;
@@ -485,6 +592,14 @@
   .analogy-section,
   .prompt-section {
     grid-template-columns: 1fr;
+  }
+
+  .bias-entry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bias-method-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .timeline-entry.reverse img {
@@ -524,5 +639,11 @@
 
   .comparison-section {
     padding: 24px;
+  }
+
+  .bias-entry-grid,
+  .bias-type-grid,
+  .bias-method-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -16,4 +16,8 @@ A decision-focused comparison of traditional machine learning for structured hou
 
 A visual learning artifact that explains how neural networks learn through examples, feedback, and adjustment. The project demonstrates technical communication, audience-centered explanation, prompt iteration, transparent tool disclosure, and responsible use of analogy.
 
+**Project 04 — Bias-Aware Engineering Leadership**
+
+A client-facing leadership playbook for evidence-based, inclusive, transparent, and accountable engineering and AI decisions. The project translates responsible-AI principles into structured design reviews, bias controls, accountability mechanisms, and reusable decision tools.
+
 The portfolio is published with GitHub Pages from the repository's `main` branch.
